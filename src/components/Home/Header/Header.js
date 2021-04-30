@@ -3,8 +3,9 @@ import Particles from 'react-particles-js';
 import Typical from "react-typical";
 import "./Header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const styles = {
@@ -43,43 +44,65 @@ const Header = () => {
                 />
             </div>
             <div className="header-text w-100 w-lg-75 py-4 ">
-        <h4 className="main-title mt-5">Hi, I am</h4>
-        <h1>name</h1>
-        <br />
-        <h2 className="text-secondary">designation</h2>
-        <br />
-        <h5 className="text-secondary">
-          I Work in{" "}
-          <span className="typewriter-span">
-            <Typical
-              steps={[
-                "React.js",
-                2000,
-                "Node.js",
-                2000,
-                "JavaScript(ES6)",
-                2000,
-              ]}
-              loop={Infinity}
-              wrapper="span"
-            />
-          </span>
-        </h5>
-        <br />
-      </div>
-      <div className="d-flex justify-content-center">
+                <h4 className="main-title mt-5">Hi, I am</h4>
+                <h1>MD. MINHAZUL ALAM</h1>
+                <br />
+                <h2 className="text-white">Front-End Developer</h2>
+                <br />
+                <h5 className="text-white">
+                    I Work in{" "}
+                    <span className="typewriter-span">
+                        <Typical
+                            steps={[
+                                "React.js",
+                                2000,
+                                "Node.js",
+                                2000,
+                                "JavaScript(ES6)",
+                                2000,
+                            ]}
+                            loop={Infinity}
+                            wrapper="span"
+                        />
+                    </span>
+                </h5>
+                <br />
+            </div>
+            {/* <div className="d-flex justify-content-center">
+                <a href="https://github.com/minhazul-dev">
+                    <FontAwesomeIcon className="mr-3" icon={faGithub} size='4x' />
+                </a>
 
-          <a href="">
-          <FontAwesomeIcon className="mr-3" icon={faGithub} size = '4x' />
-          </a>
-          <a href="">
-          <FontAwesomeIcon className="ml-3" icon={faLinkedinIn} size = '4x' />
-          </a>
-      
-      
-
+                <a href="">
+                    <FontAwesomeIcon className="ml-3" icon={faLinkedinIn} size='4x' />
+                </a>
+                <a href="">
+                    <FontAwesomeIcon className="ml-3" icon={faFacebook} size='4x' />
+                </a>
+            </div> */}
+            <div>
+        <div className="d-none d-lg-block">
+          <div className="d-flex flex-column sticky-icon-container ">
+            <a href="https://github.com/minhazul-dev" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon className="ml-3 sticky-icon" icon={faGithub} size='4x' />
+            </a>
+            <a href="" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon className="ml-3 sticky-icon" icon={faLinkedin} size='4x' />
+            </a>
+            
+            <a href="" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon className="ml-3 sticky-icon" icon={faFacebook} size='4x' />
+            </a>
+            <div className="line" />
+          </div>
+        </div>
+        {/* <button href="#navbar" className="fixed-button">
+        <FontAwesomeIcon className="ml-3 sticky-icon" icon={faArrowUp}/>
+        </button> */}
       </div>
+
         </header>
+
     );
 };
 

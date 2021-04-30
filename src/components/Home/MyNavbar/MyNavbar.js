@@ -44,11 +44,11 @@ const MyNavbar = () => {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto">
-        <Nav.Link href="#aboutMe">About Me</Nav.Link>
-        <Nav.Link href="#myPortfolio">Portfolio</Nav.Link>
-        <Nav.Link href="#blogs">Blogs</Nav.Link>
-        <Nav.Link href="#skills">Abilities</Nav.Link>
-        <Nav.Link href="#getInTouch">Contact</Nav.Link>
+        <Nav.Link href="#aboutMe" className="text-white">About Me</Nav.Link>
+        <Nav.Link href="#myPortfolio" className="text-white">Portfolio</Nav.Link>
+        <Nav.Link href="#blogs" className="text-white">Blogs</Nav.Link>
+        <Nav.Link href="#skills" className="text-white">Abilities</Nav.Link>
+        <Nav.Link href="#getInTouch" className="text-white">Contact</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

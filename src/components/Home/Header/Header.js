@@ -49,23 +49,24 @@ const Header = () => {
                 <br />
                 <h2 className="text-white">Front-End Developer</h2>
                 <br />
-                <h5 className="text-white">
+                <h3 className="text-white">
                     I Work in{" "}
                     <span className="typewriter-span">
                         <Typical
-                            steps={[
+                            steps={[ 
                                 "React.js",
-                                2000,
-                                "Node.js",
                                 2000,
                                 "JavaScript(ES6)",
                                 2000,
+                                "Web Design",
+                                2000,
+                                "Web-Development"
                             ]}
                             loop={Infinity}
                             wrapper="span"
                         />
                     </span>
-                </h5>
+                </h3>
                 <br />
             </div>
             {/* <div className="d-flex justify-content-center">

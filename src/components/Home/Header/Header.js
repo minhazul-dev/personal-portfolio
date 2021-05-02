@@ -4,7 +4,7 @@ import Typical from "react-typical";
 import "./Header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp, faFile } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -83,7 +83,10 @@ const Header = () => {
             <div>
         <div className="d-none d-lg-block">
           <div className="d-flex flex-column sticky-icon-container ">
-            <a href="https://github.com/minhazul-dev" rel="noreferrer" target="_blank">
+            <a href="https://drive.google.com/file/d/1A4s3SQwKXhWgBs-tVl47TsZJhciF6EW_/view?usp=sharing" target="_blank" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon className="ml-3 sticky-icon" icon={faFile} size='4x' />
+            </a>
+            <a href="https://github.com/minhazul-dev" target="_blank" rel="noreferrer" target="_blank">
             <FontAwesomeIcon className="ml-3 sticky-icon" icon={faGithub} size='4x' />
             </a>
             <a href="" rel="noreferrer" target="_blank">

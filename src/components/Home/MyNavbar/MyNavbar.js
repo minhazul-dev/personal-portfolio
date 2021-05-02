@@ -1,9 +1,10 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import "./MyNavbar.css"
+import { Link } from 'react-scroll'
 
 const MyNavbar = () => {
-    return (
+  return (
     //     <nav className="navbar navbar-expand-lg navbar-light bg-light">
     //     <div className="container-fluid">
     //       <a className="navbar-brand" href="#">Navbar</a>
@@ -41,18 +42,75 @@ const MyNavbar = () => {
     //     </div>
     //   </nav>
     <Navbar id="navbar" collapseOnSelect expand="lg">
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="ml-auto">
-        <Nav.Link href="#aboutMe" className="text-white">About Me</Nav.Link>
-        <Nav.Link href="#myPortfolio" className="text-white">Portfolio</Nav.Link>
-        <Nav.Link href="#blogs" className="text-white">Blogs</Nav.Link>
-        <Nav.Link href="#skills" className="text-white">Abilities</Nav.Link>
-        <Nav.Link href="#getInTouch" className="text-white">Contact</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-    );
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link href="https://drive.google.com/file/d/1A4s3SQwKXhWgBs-tVl47TsZJhciF6EW_/view?usp=sharing" target="_blank" className="text-white Resume">Download Resume</Nav.Link>
+         
+         <Link
+          activeClass="active"
+          to="aboutMe"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+         >
+        <Nav.Link href="#aboutMe" className="text-white mt-2">About Me</Nav.Link>
+         </Link>
+         <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+         >
+        <Nav.Link href="#aboutMe" className="text-white mt-2">Projects</Nav.Link>
+         </Link>
+
+         <Link
+          activeClass="active"
+          to="blogs"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+         >
+        <Nav.Link href="#aboutMe" className="text-white mt-2">Blogs</Nav.Link>
+         </Link>
+         <Link
+          activeClass="active"
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+         >
+        <Nav.Link href="#aboutMe" className="text-white mt-2">Skills</Nav.Link>
+         </Link>
+         <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+         >
+        <Nav.Link href="#aboutMe" className="text-white mt-2">Contact</Nav.Link>
+         </Link>
+
+
+
+
+          {/* <Nav.Link href="#aboutMe" className="text-white">About Me</Nav.Link> */}
+          {/* <Nav.Link href="#myPortfolio" className="text-white">Portfolio</Nav.Link>
+          <Nav.Link href="#blogs" className="text-white">Blogs</Nav.Link>
+          <Nav.Link href="#skills" className="text-white">Abilities</Nav.Link>
+          <Nav.Link href="#getInTouch" className="text-white">Contact</Nav.Link> */}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
 };
 
 export default MyNavbar;

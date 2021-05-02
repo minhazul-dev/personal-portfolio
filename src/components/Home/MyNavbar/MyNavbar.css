@@ -1,7 +1,11 @@
  #navbar {
     background-color: #05386B;
   }
-  
+  .Resume{
+    border: 1px solid whitesmoke;
+    margin-top:5px;
+    font-size:18px;
+  }
  /* .navbar-img {
     width: 160px;
     height: 120px;

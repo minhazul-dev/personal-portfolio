@@ -1,8 +1,10 @@
 import React from 'react';
 import blog1 from "../../images/blog1.png"
+import Zoom from 'react-reveal/Zoom';
 
 const Blogs = () => {
     return (
+        <Zoom>
         <main style={{backgroundColor:'#379683'}} id="blogs">
             
         <div className="container">
@@ -32,6 +34,7 @@ const Blogs = () => {
             </div>
         </div>
         </main>
+        </Zoom>
     );
 };
 

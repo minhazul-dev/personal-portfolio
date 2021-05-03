@@ -1,5 +1,6 @@
 import React from 'react';
-
+import "./SingleProject.css"
+import Zoom from 'react-reveal/Zoom';
 const SingleProject = ({project}) => {
     console.log(project);
     return (
@@ -12,7 +13,9 @@ const SingleProject = ({project}) => {
                         <p className="text-white"><span className="text-success font-weight-bold ">Technologies:  </span>{project?.technologies}</p>
                     </div>
                     <div className="col-md-4">
+                    <Zoom left>
                         <img className="card-img-top w-100 mb-5" src={project?.img} alt={project?.img} />
+                        </Zoom>
                         <div className="btn-group" role="group" aria-label="Basic example">
                             <a href={project?.website} target="_blank" type="button" class="btn btn-success rounded mr-2">Website</a>
                             <a href={project?.github} target="_blank" type="button" class="btn btn-secondary rounded mr-2">GitHub</a>

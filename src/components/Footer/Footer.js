@@ -68,18 +68,18 @@ const Footer = () => {
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
                   <h6 className="">Recent Works</h6>
-                  <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{width: '60px', backgroundColor: '#7c4dff', height: '2px'}} />
+                  <hr className="mb-4 mt-0 d-inline-block mx-auto" target="_blank" style={{width: '60px', backgroundColor: '#7c4dff', height: '2px'}} />
                   <p>
-                    <a href="https://github.com/minhazul-dev" className="text-dark">All works</a>
+                    <a href="https://github.com/minhazul-dev" target="_blank" className="text-dark">All works</a>
                   </p>
                   <p>
-                    <a href="https://unique-templates.web.app/" className="text-dark">A full stack website</a>
+                    <a href="https://unique-templates.web.app/" target="_blank" className="text-dark">A full stack website</a>
                   </p>
                   <p>
-                    <a href="https://premiere-league-teams.netlify.app/" className="text-dark">A dynamic website with Public API</a>
+                    <a href="https://premiere-league-teams.netlify.app/" target="_blank" className="text-dark">A dynamic website with Public API</a>
                   </p>
                   <p>
-                    <a href="#!" className="text-dark">A movie Bank</a>
+                    <a href="https://movie-bank01.netlify.app/'" target="_blank" className="text-dark">A movie Bank</a>
                   </p>
                 </div>
                 {/* Grid column */}

@@ -1,4 +1,5 @@
 
+import MessengerCustomerChat from 'react-messenger-customer-chat/lib/MessengerCustomerChat';
 import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
 import Blogs from './components/Blogs/Blogs';
@@ -12,17 +13,22 @@ import Skills from './components/Skills/Skills';
 function App() {
   return (
     <div>
-<Home/>
-<AboutMe/>
-<Projects/>
-<Skills/>
-<Blogs/>
-<ContactMe/>
-<Footer/>
+      <Home />
+      <AboutMe />
+      <Projects />
+      <Skills />
+      <Blogs />
+      <ContactMe />
+      <Footer />
+      <MessengerCustomerChat
+    pageId="102340855359939"
+    appId="119270633519552"
+    htmlRef="https://personal-portfolio-208c4.web.app/"
+  />
     </div>
 
 
-     
+
   );
 }
 

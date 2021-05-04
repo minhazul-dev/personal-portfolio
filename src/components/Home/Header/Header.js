@@ -3,8 +3,8 @@ import Particles from 'react-particles-js';
 import Typical from "react-typical";
 import "./Header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGithub, faInstagram, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUp, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {  faFile } from '@fortawesome/free-solid-svg-icons';
 
 
 

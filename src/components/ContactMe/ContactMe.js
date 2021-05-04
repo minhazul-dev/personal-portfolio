@@ -15,6 +15,10 @@ const ContactMe = () => {
         });
         e.target.reset()
     }
+
+    const alertMsg  = () => {
+        alert("Message Sent Successfully")
+    }
     return (
       <section id="contact" style={{backgroundColor:'rgb(212,244,255', height:'650px'}}>
           <h3 className= " pt-5 text-center">Get in Touch</h3>
@@ -35,7 +39,7 @@ const ContactMe = () => {
                         <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
                     </div>
                     <div className="col-8 pt-3 mx-auto text-center">
-                        <input type="submit" className="btn btn-info" value="Send Message"></input>
+                        <input onClick={alertMsg} type="submit" className="btn btn-info" value="Send Message"></input>
                     </div>
                 </div>
             </form>

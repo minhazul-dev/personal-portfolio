@@ -6,8 +6,9 @@ import MyNavbar from './MyNavbar/MyNavbar';
 const Home = () => {
     return (
         <div>
-            <MyNavbar/>
+            {/* <MyNavbar/> */}
             <Header/>
+          
         </div>
     );
 };

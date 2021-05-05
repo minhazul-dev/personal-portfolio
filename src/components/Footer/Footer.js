@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import {  faLocationArrow, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import MessengerCustomerChat from 'react-messenger-customer-chat/lib/MessengerCustomerChat';
+
 
 const Footer = () => {
   return (
@@ -105,6 +107,14 @@ const Footer = () => {
             <a className="text-dark" href="">Minhazul Alam</a>
         </div>
         {/* Copyright */}
+      
+   <MessengerCustomerChat
+    pageId="102340855359939"
+    // appId="119270633519552"
+    appId="119270633519552"
+    htmlRef="https://personal-portfolio-208c4.web.app/"
+  />
+
       </footer>
       {/* Footer */}
     </div>

@@ -41,7 +41,7 @@ const MyNavbar = () => {
     //       </div>
     //     </div>
     //   </nav>
-    <Navbar id="navbar" collapseOnSelect expand="lg">
+    <Navbar id="navbar" collapseOnSelect expand="lg" sticky="top" >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
@@ -98,6 +98,7 @@ const MyNavbar = () => {
          >
         <Nav.Link href="#aboutMe" className="text-white mt-2">Contact</Nav.Link>
          </Link>
+        
 
 
 
